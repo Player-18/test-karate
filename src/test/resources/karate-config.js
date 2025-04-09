@@ -1,5 +1,5 @@
 function fn() {
     return {
-      githubToken: ''
+      githubToken: java.lang.System.getenv('GITHUB_TOKEN') || ''
     };
   }
