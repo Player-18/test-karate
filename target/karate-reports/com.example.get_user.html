@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.capture("report_feature",{distinct_id:"ccf01d64-ea40-4f31-a545-c1bdbeebdd26",karate_version:"1.4.0",karate_meta:null});
+  }
+});
+</script>
+
+    <title>com.example.get_user</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">1</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2025-04-09 02:20:22 PM</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:3]"><span>[1:3]</span> <span>Get details of authenticated user</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">com/example/get_user.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Get User Information</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:3]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:3]</span>
+                <span class="scenario-name">Get details of authenticated user</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>1132</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref passed">4</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://api.github.com/user&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref passed">5</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Authorization = &#39;Bearer &#39; + githubToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">7</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref passed">6</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1084</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.6">14:20:21.180 request:
+1 &gt; GET https://api.github.com/user
+1 &gt; Authorization: Bearer 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
+1 &gt; Host: api.github.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.26)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+14:20:22.105 response time in milliseconds: 780
+1 &lt; 200
+1 &lt; Date: Wed, 09 Apr 2025 11:20:21 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Cache-Control: private, max-age=60, s-maxage=60
+1 &lt; Vary: Accept, Authorization, Cookie, X-GitHub-OTP,Accept-Encoding, Accept, X-Requested-With
+1 &lt; ETag: W/&quot;9d146306f07c607970db68feac4344ef143b2db14d68d926e18f9ab9dd210626&quot;
+1 &lt; Last-Modified: Tue, 08 Apr 2025 06:47:04 GMT
+1 &lt; github-authentication-token-expiration: 2025-07-07 15:00:40 +0300
+1 &lt; X-GitHub-Media-Type: github.v3; format=json
+1 &lt; x-accepted-github-permissions: allows_permissionless_access=true
+1 &lt; x-github-api-version-selected: 2022-11-28
+1 &lt; X-RateLimit-Limit: 5000
+1 &lt; X-RateLimit-Remaining: 4997
+1 &lt; X-RateLimit-Reset: 1744201114
+1 &lt; X-RateLimit-Used: 3
+1 &lt; X-RateLimit-Resource: core
+1 &lt; Access-Control-Expose-Headers: ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, X-GitHub-SSO, X-GitHub-Request-Id, Deprecation, Sunset
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Strict-Transport-Security: max-age=31536000; includeSubdomains; preload
+1 &lt; X-Frame-Options: deny
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 0
+1 &lt; Referrer-Policy: origin-when-cross-origin, strict-origin-when-cross-origin
+1 &lt; Content-Security-Policy: default-src &#39;none&#39;
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Server: github.com
+1 &lt; X-GitHub-Request-Id: A164:1D3337:13D8A0:14408A:67F657F5
+{&quot;login&quot;:&quot;Player-18&quot;,&quot;id&quot;:73780721,&quot;node_id&quot;:&quot;MDQ6VXNlcjczNzgwNzIx&quot;,&quot;avatar_url&quot;:&quot;https://avatars.githubusercontent.com/u/73780721?v=4&quot;,&quot;gravatar_id&quot;:&quot;&quot;,&quot;url&quot;:&quot;https://api.github.com/users/Player-18&quot;,&quot;html_url&quot;:&quot;https://github.com/Player-18&quot;,&quot;followers_url&quot;:&quot;https://api.github.com/users/Player-18/followers&quot;,&quot;following_url&quot;:&quot;https://api.github.com/users/Player-18/following{/other_user}&quot;,&quot;gists_url&quot;:&quot;https://api.github.com/users/Player-18/gists{/gist_id}&quot;,&quot;starred_url&quot;:&quot;https://api.github.com/users/Player-18/starred{/owner}{/repo}&quot;,&quot;subscriptions_url&quot;:&quot;https://api.github.com/users/Player-18/subscriptions&quot;,&quot;organizations_url&quot;:&quot;https://api.github.com/users/Player-18/orgs&quot;,&quot;repos_url&quot;:&quot;https://api.github.com/users/Player-18/repos&quot;,&quot;events_url&quot;:&quot;https://api.github.com/users/Player-18/events{/privacy}&quot;,&quot;received_events_url&quot;:&quot;https://api.github.com/users/Player-18/received_events&quot;,&quot;type&quot;:&quot;User&quot;,&quot;user_view_type&quot;:&quot;public&quot;,&quot;site_admin&quot;:false,&quot;name&quot;:null,&quot;company&quot;:null,&quot;blog&quot;:&quot;&quot;,&quot;location&quot;:null,&quot;email&quot;:null,&quot;hireable&quot;:null,&quot;bio&quot;:null,&quot;twitter_username&quot;:null,&quot;notification_email&quot;:null,&quot;public_repos&quot;:22,&quot;public_gists&quot;:0,&quot;followers&quot;:0,&quot;following&quot;:1,&quot;created_at&quot;:&quot;2020-11-01T12:01:54Z&quot;,&quot;updated_at&quot;:&quot;2025-04-08T06:47:04Z&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref passed">7</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref passed">8</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.login == &#39;#notnull&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">17</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref passed">9</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.id == &#39;#number&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref passed">10</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &#39;User login:&#39;, response.login</span>
+      </div>
+    </div>
+    <div class="time-cell passed">21</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.10">14:20:22.162 [print] User login: Player-18 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
